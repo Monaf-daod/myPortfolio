@@ -7,7 +7,7 @@ export const SkillsMainContainer = styled.div`
   padding: 0.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   perspective: 900px;
 `;

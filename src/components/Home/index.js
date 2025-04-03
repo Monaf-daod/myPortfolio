@@ -30,7 +30,7 @@ const Home = () => {
         <HomeTitle>Monaf Daod</HomeTitle>
         <HomeInfo>
           <Typist
-            sentences={["Front End Developer", "React Js & Next Js"]}
+            sentences={["Front End Developer", "Vue js | React Js | Next Js"]}
             cursorColor="var(--primary-font-color)"
             typingSpeed={100}
             loop={true}
