@@ -109,7 +109,7 @@ export const AboutInfoDir = styled.h4`
 
 export const AboutInfoDesc = styled.p`
   color: #fff;
-  width: 65%;
+  width: 70%;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 400;
@@ -122,6 +122,11 @@ export const AboutInfoDesc = styled.p`
 `;
 
 export const Span = styled.span`
+  color: var(--primary-font-color);
+  font-size: 2.3rem;
+`;
+
+export const Heading4 = styled.h4`
   color: var(--primary-font-color);
   font-size: 2.3rem;
 `;

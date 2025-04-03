@@ -8,6 +8,7 @@ import {
   AboutInfoDir,
   AboutInfoDesc,
   Span,
+  Heading4
 } from "./Style.js";
 
 const About = () => {
@@ -23,9 +24,13 @@ const About = () => {
             </AboutInfoDir>
           </Tada>
           <AboutInfoDesc>
-            I am a professional, Front End Developer Proficient in building and
-            developing modern and responsive websites in the Software industry.
-            Let us work together.
+            Detail-oriented Front-end Web Developer with 5 years of proven experience in building 
+            and developing responsive websites, including 2 years specializing in front-end microservices architecture. 
+            A strong advocate of the mobile-first strategy, specializing in crafting seamless user experiences. 
+            Proficient in HTML, CSS, and JavaScript, along with modern libraries and frameworks such as Vue.js, React.js and Next.js.
+            <Tada>
+            <Heading4>Let's work together.</Heading4>
+            </Tada>
           </AboutInfoDesc>
         </Aboutinfo>
       </AboutSection>
