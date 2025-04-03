@@ -23,14 +23,29 @@ const Skills = () => {
   useEffect(() => {
     setSkillsList([...data]);
   }, []);
-  // function for handling services display as array of item,
+  // function for handling services display as array of items,
   // each item is array of 2 items
   const handleSkillsItems = (skillsArr) => {
     let tempArrays = [];
     let temp = [...skillsArr];
+    let counter = 0;
     while (temp.length) {
-      tempArrays.push(temp.splice(0, 3));
-    }
+      switch (counter) {
+        case 0:
+        case 2:
+        case 4:
+          tempArrays.push(temp.splice(0, 3));
+          break;
+        case 1:
+        case 3:
+          tempArrays.push(temp.splice(0, 1));
+          break;
+        default:
+          tempArrays.push(temp.splice(0, 3));
+          break;
+      } 
+    counter++
+  }
     return tempArrays;
   };
 
@@ -40,7 +55,7 @@ const Skills = () => {
       {handleSkillsItems(skillsList).map((colSkills, index) => {
         if (index === 0)
           return (
-            <SkillFirstColumn key={index} xs={12} md={4}>
+            <SkillFirstColumn key={index} xs={12} md={3}>
               {colSkills.map((skillItem, ind) => (
                 <SkillFirstColumnItem key={ind} position={ind}>
                   <SkillCard>
@@ -56,9 +71,9 @@ const Skills = () => {
               ))}
             </SkillFirstColumn>
           );
-        else if (index === 1)
+        else if (index === 1 || index===2 || index===3)
           return (
-            <SkillSecondColumn key={index} xs={12} md={4}>
+            <SkillSecondColumn key={index} xs={12} md={2}>
               {colSkills.map((skillItem, ind) => (
                 <SkillSecondColumnItem key={ind}>
                   <SkillCard>
@@ -76,7 +91,7 @@ const Skills = () => {
           );
         else
           return (
-            <SkillThirdColumn key={index} xs={12} md={4}>
+            <SkillThirdColumn key={index} xs={12} md={3}>
               {colSkills.map((skillItem, ind) => (
                 <SkillThirdColumnItem key={ind} position={ind}>
                   <SkillCard>

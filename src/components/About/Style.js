@@ -126,7 +126,10 @@ export const Span = styled.span`
   font-size: 2.3rem;
 `;
 
-export const Heading4 = styled.h4`
+export const HeadingFour = styled.h4`
   color: var(--primary-font-color);
-  font-size: 2.3rem;
+  font-size: 2rem;
+  @media (min-width: 320px) and (max-width: 991px) {
+    font-size: 1.5rem;
+  }
 `;

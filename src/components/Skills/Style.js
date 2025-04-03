@@ -25,8 +25,8 @@ export const SkillFirstColumn = styled(Col)`
   align-items: center;
 `;
 export const SkillFirstColumnItem = styled.div`
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   margin: 0rem 0.5rem;
   align-self: ${(props) =>
     props.position === 0 || props.position === 2 ? "flex-end" : "flex-start"};
@@ -39,12 +39,12 @@ export const SkillSecondColumn = styled(Col)`
   padding: 0rem 0.3rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 `;
 export const SkillSecondColumnItem = styled.div`
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   margin: 0.8rem 0.5rem;
 `;
 
@@ -56,8 +56,8 @@ export const SkillThirdColumn = styled(Col)`
   align-items: center;
 `;
 export const SkillThirdColumnItem = styled.div`
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   margin: 0rem 0.5rem;
   align-self: ${(props) =>
     props.position === 0 || props.position === 2 ? "flex-start" : "flex-end"};

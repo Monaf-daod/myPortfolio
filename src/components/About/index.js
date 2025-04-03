@@ -8,7 +8,7 @@ import {
   AboutInfoDir,
   AboutInfoDesc,
   Span,
-  Heading4
+  HeadingFour
 } from "./Style.js";
 
 const About = () => {
@@ -28,10 +28,10 @@ const About = () => {
             and developing responsive websites, including 2 years specializing in front-end microservices architecture. 
             A strong advocate of the mobile-first strategy, specializing in crafting seamless user experiences. 
             Proficient in HTML, CSS, and JavaScript, along with modern libraries and frameworks such as Vue.js, React.js and Next.js.
-            <Tada>
-            <Heading4>Let's work together.</Heading4>
-            </Tada>
           </AboutInfoDesc>
+          <Tada>
+            <HeadingFour>Let's work together.</HeadingFour>
+          </Tada>
         </Aboutinfo>
       </AboutSection>
     </Pulse>

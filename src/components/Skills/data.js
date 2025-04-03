@@ -7,6 +7,8 @@ import sassIcon from "../../assets/techniques/sass.svg";
 import bootstrapIcon from "../../assets/techniques/bootstrap.svg";
 import matertialUiIcon from "../../assets/techniques/materialui.svg";
 import tailwindIcon from "../../assets/techniques/tailwind.svg";
+import vuejsIcon from "../../assets/techniques/vuejs.svg";
+import typescriptIcon from "../../assets/techniques/typescript.svg";
 export const data = [
   {
     id: 1,
@@ -25,31 +27,41 @@ export const data = [
   },
   {
     id: 4,
+    title: "Typescript",
+    image: typescriptIcon,
+  },
+  {
+    id: 5,
+    title: "Vue Js",
+    image: vuejsIcon,
+  },
+  {
+    id: 6,
     title: "React Js",
     image: reactIcon,
   },
   {
-    id: 5,
+    id: 7,
     title: "Next Js",
     image: nextjsIcon,
   },
   {
-    id: 6,
+    id: 8,
     title: "Sass",
     image: sassIcon,
   },
   {
-    id: 7,
+    id: 9,
     title: "Bootstrap",
     image: bootstrapIcon,
   },
   {
-    id: 8,
+    id: 10,
     title: "Material Ui",
     image: matertialUiIcon,
   },
   {
-    id: 9,
+    id: 11,
     title: "Tailwind",
     image: tailwindIcon,
   },
