@@ -2,9 +2,11 @@ import React from "react";
 import { FooterSection, P } from "./Style.js";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
   return (
     <FooterSection>
-      <P> Copyright &copy; 2020 | Monaf Daod </P>
+      <P> Copyright &copy;{currentYear} | Monaf Daod </P>
     </FooterSection>
   );
 };
